@@ -1,0 +1,637 @@
+/* General body styling for font and overall layout */
+body {
+    margin: 0;
+}
+/* styling for the first section background */
+.background-paragraph {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65vh;
+}
+/*Styling for the navigation bar */
+.nav{
+    position: absolute;/* Positions the element absolutely relative to its nearest position */
+    top: 3;
+    width: 100%;
+    color: white;
+}
+/* styling for the left side content on the nav bar */
+.logocontainer{  
+    display: flex;
+    align-items: center;
+}
+/* Styling for the logo image in the navbar */
+.logocontainer img{
+    width: 5%;
+    padding-left: 20px;
+}
+/* styling for the left side text in the nav bar */
+.logocontainer p{
+    padding: 5px;
+  }
+  /* General container styling */
+.container{
+    width:80%;
+    margin: auto; /* Centers the container horizontally */
+}
+/* Styling for the container that holds the navbar contents */
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* Styling for the right side content in the navbar */
+.navb{
+    display: absolute;
+    top: 0;
+    left: 0;
+    justify-content: end;/*  `flex-end` to align items at the end */
+    top: 0;
+    justify-content: flex-start;/* Conflicting styles; consider removing one */
+
+}
+/* Styling for the unordered list in the navbar */
+.navb ul{
+    list-style: none;/* Removes default list styling (bullets) */
+    display: flex;/* Displays list items in a horizontal row */
+    gap: 15px;
+}
+/* Styling for the individual list items */
+.navb ul li{
+    padding: 0px 2px;/* Adds padding inside the list items */
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+/* Styling for the anchor links in the list items */
+.navb ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+/* Styling for the Zomato logo */
+.logo {
+    width: 275px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: auto; /* Center the logo horizontally */
+    justify-content: center;
+    align-items: center;
+    padding-top: 155px;
+}
+/* Styling for the text under the logo */
+.first-p {
+    font-size: 200%;
+    font-family: sans-serif;
+    color: white;
+    white-space: nowrap;/* Prevents the text from wrapping to the next line */
+    padding-left: 430px;
+}
+/* Styling for the search container */
+.search-container{
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    max-width: 700px;
+    align-items: center;
+    margin: auto;/* Centers the container horizontally */
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;/* Arranges child elements in a row */
+}
+/* Additional text styling (possibly unused in this context) */
+.text-b {  
+    font-size: 300%;
+    font-family: sans-serif;
+    color: white;
+    white-space: nowrap;/* Prevents text wrapping */
+    padding-left: 400px;
+}
+/* Styling for the location icon */
+.fa-location-dot{
+    color: rgb(231, 129, 129);
+    font-size: 22px;
+}
+/* Styling for the up caret icon */
+.fa-caret-down{
+    color: rgb(28, 27, 27);
+}
+/* Styling for the location input field */
+.detectlocation input{
+    border: none;
+    font-size: 15px;
+    width: 190px;
+}
+/* Styling for the divider line */
+.line{
+    padding: 7px;
+}
+/* Styling for the search input field */
+.search-item input{
+    max-width: 100%;
+    width: 400px;
+    font-size: 15px;
+    border: none;
+    padding: 5 10px;
+    outline: none;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* styling for the section-2*/
+.sec-1{
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Optional: Spacing between boxes */
+    margin-top: 40px;
+    padding-left: 150px; /* Optional: Padding around the section */
+    flex-wrap: wrap; 
+}
+/* Styling for each box */
+.box{
+    position: relative;/* Positions elements inside the box relative to it */
+    width: 550px;
+    margin: 5px 5px;
+    overflow: hidden;/* Ensures content does not overflow outside the box */
+    border-radius: 15px;
+    box-shadow: 0 1px 2px grey;/* Adds a subtle shadow to the box */
+    background-color: rgb(204, 203,203);
+    transition: all 0.2s ease-in-out;/* Adds smooth transition effects on hover */
+}
+/* Hover effect for the box */
+.box:hover {
+    transform: scale(1.07); /* Slightly enlarges the box when hovered */
+}
+/* Styling for the images inside the boxes */
+.box img{
+    width: 550px;
+    height: 250px;
+    border-radius: 15px;
+    border: 1px solid rgb(204, 203,203);/* Adds a border matching the box color */
+    z-index: -1;/* Places the image behind the overlay */
+}
+/* Styling for the white overlay at the bottom of each box */
+.white{
+    position: absolute;/* Positions the overlay relative to the box */
+    bottom: 3px;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    z-index: 2;
+}
+/* Styling for the heading text inside the overlay */
+.text-container{
+    text-align: left;
+    margin: 10;
+    padding-left: 20px;
+    margin-right: 3;/* Adds a small margin to the right of the text */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    color: rgb(56,56,56);
+}
+/* Styling for the subtext inside the overlay */
+.white1 {
+    text-align: left;
+    margin: 10;
+    padding-left: 20px;
+    margin-right: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    color: rgb(56,56,56);
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* Styling for the Section 3 heading */
+.collect{
+    padding-top: 80px;
+    padding-left: 140px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+/* Container for the introductory text in Section 3 */
+.collection-container{
+    background-color: white;
+    height: 45px;
+    max-width: 1150px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+/* Flex container for the text content in the introductory section */
+.col-cont{
+    display: flex;
+}
+/* Styling for the main description text */
+.collect-p{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Styling for the "All collections" link */
+.collect-p1{
+    color: red;
+    padding-left: 180px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Styling for the right arrow icon next to "All collections" */
+.caret-right{
+    color: rgb(46, 43, 43);
+    font-size: 22px;
+    padding: 15px;
+}
+/* Flex container for the collection boxes */
+.collect-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Styling for the images in the collection boxes */
+.images{
+    width: 270px;
+    height: 320px;
+    border-radius: 3%;
+}
+/* Container for each collection box */
+.box-content{
+    position: relative;/* Positions child elements relative to the box */
+}
+/* Overlay container for text in collection boxes */
+.whitez{
+    position: absolute;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    height: 22%;
+    margin-bottom: 20px;
+    padding-top: 93%;
+}
+/* Subtext container within the overlay */
+.white1z {
+    text-align: left;
+    margin: 10;
+    padding-left: 10px;
+    margin-right: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    color: white;
+    display: flex;
+    margin-top: -2px;
+}
+/* Heading text inside the overlay */
+.text-containerz{
+    text-align: left;
+    margin: 10;
+    padding-left: 20px;
+    margin-right: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    color: white;
+}
+/* Styling for the right arrow icon inside the overlay */
+.caret-right1{
+    color: rgb(17, 16, 16);
+    margin-top: 20px;
+    margin-left: 4px;
+    font-size: 15px;
+}
+/* Styling for the right arrow icon inside the overlay */
+.caret-right{
+    color: white;
+    margin-top: -15px;
+    font-size: 15px;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* styling for the section-4  heading*/
+.loc-para{
+    padding-top: 380px;
+    padding-left: 140px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+/* Ensures that the strong tag inside the heading follows the same font styling */
+.loc-para strong {
+  font-size: inherit; /* Ensures the strong tag follows the parent's font weight */
+}
+/* Container for the location list */
+.location-box {
+    margin-top: 40px;
+  }
+    /* Grid container for the localities (matrix layout) */
+  .matrix-container {
+    display: grid;/* Uses grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-gap: 10px; /* Gap between cells */
+    width: 1100px; /* Fixed width for the grid */
+    height: 170px; /* Auto height based on content */
+    background-color: white; /* Grid background color */
+    padding-left: 140px;
+  }
+  /* Styling for each individual locality item */
+  .matrix-item {
+    background-color: white;
+    border: 1px solid #ccc; /* Optional: border around items */
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+  }
+  /* Styling for the h3 (locality name) inside each matrix item */
+  .matrix-item h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em; /* Larger font size for h3 */
+    font-weight: 50; /* Ensure h3 text is not bold */
+    color: rgb(73, 71, 71);
+  }
+  /* Styling for the paragraph (number of places) inside each matrix item */
+  .matrix-item p {
+    margin: 5px 0 0 0; /* Add a small gap between h3 and p */
+    font-size: 1em; /* Normal font size for p */
+    color: rgb(73, 71, 71);
+  }
+/* Styling for the "See more" item */
+  .matrix-item1 {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+    font-weight: normal;
+  }
+  /* Styling for the h3 inside the "See more" item */
+  .matrix-item1  h3{
+    font-weight: normal;
+    color: rgb(73, 71, 71);
+  }
+  /* Styling for the right arrow icon */
+  .fa-chevron-right{
+    position: absolute;
+    padding-left: 300px;
+    margin-top: 15px;
+    color: rgb(73, 71, 71);
+    font-size: 10px;
+  }
+  /* Styling for the down arrow icon in the "See more" item */
+  .fa-chevron-down{
+    position: absolute;
+    padding-left: 60px;
+    margin-top: -37px;
+    color: rgb(73, 71, 71);
+    font-size: 13px;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* Styling for the container of the Zomato app download section */
+  .gtz-container{
+    margin-top: 250px;
+    width: 100%;
+    height: 470px;
+    background-color:rgb(253, 249, 243); 
+    display: flex;
+  }
+  /* Styling for the phone image */
+  .phimg{
+    width: 430px;
+    margin-top: 40px;
+    margin-left: 265px;
+  }
+  /* Content container styling */
+  .gtz-content{
+    margin-top: 50px; /* Same top margin as .phimg */
+    margin-left: 20px; /* Add space between .phimg and .gtz-content */
+    width: 440px;
+  }
+  /* Styling for the first paragraph (heading) */
+  .gtz-p1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-bottom: 23px; /* Adds space below .gtz-p1 */
+}
+/* Styling for the second paragraph (description) */
+.gtz-p2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.92em;
+    line-height: 2;
+    margin-top: 0; /* Ensure no extra space above if using flexbox */
+}
+.text-btn{
+    display: flex;
+    gap: 10px;
+}
+/* Styling for the radio button container */
+.zomato-input{
+  display: flex;
+  height: 45px;
+  margin: 15px 0px;
+  }
+  /* Styling for the input container */
+  .input-container{
+    height: 100%; 
+  }
+  /* Styling for the input field (email or phone number) */
+  .input-container input{
+    width: 100%;
+    min-width: 280px;
+    max-width: 300px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    height: 100%;
+  }
+  /* Styling for the share button */
+  .zomato-app-btn{
+    color: white;
+    background-color: rgb(239, 79, 95);
+    width: 450px;
+    min-width: 200px;
+    min-height: 55px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  .zomato-radiobtn{
+    margin: 5px 0px;
+    font-size: 18px;
+  }
+  /* Styling for the download links section */
+  .download-app{
+    display: flex;
+  }
+  /* Styling for the download images (App Store & Google Play Store) */
+  .download-app img{
+    width: 100%;
+    max-width: 120px;
+    margin-right: 10px;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* Styling for the section that contains explore options */
+.exp-container{
+    padding-top: 30px;
+    padding-left: 140px;
+    margin: 0;
+  }
+  /* Styling for the heading text "Explore options near me" */
+  .exp-para{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 30px; /* Adjust size as needed */
+    margin: 0;
+  }
+  /* Styling for each container that holds a single option (Popular Cuisines, etc.) */
+  .four-container{
+    margin-top: 20px;
+    width: 1100px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #eae6e6;
+  }
+  /* Styling for the paragraph text inside each container (e.g., "Popular Cuisine Near Me") */
+  .four-container p{
+    padding-top: 5px;
+    padding-left: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(43, 41, 41);
+  }
+  /* Styling for the chevron down arrow */
+  .arrow{
+    color: rgb(43, 41, 41);
+    padding-left: 1050px;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+/*Styling for Final Footer Section */
+  .final-container{
+    margin-top: 50px;
+    width: 100%;
+    height:550px;
+    background-color: rgb(246, 246, 246);
+  }
+  /* Main block inside the footer */
+  .final-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 140px;
+    margin: 0;
+  }
+  /* Flag image styling */
+  .flagimage{
+    width:20px;
+    height: 15px;
+    padding-right: 15px;
+  }
+  .flagimage img{
+    width: 100%;
+    height: 100%;
+  }
+  /* Footer option section (Country and Language) */
+  .footeroptionsection {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 5px;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-right: 30px; /* Adds spacing between the elements */
+    border-radius: 10px;
+}
+/* Language and country section alignment */
+  .footerlanguage-country{
+    display: flex;
+    margin-right: 160px;
+  }
+  /* Globe icon styling */
+  .iconlobeimage{
+    padding-right: 15px;
+  }
+  /* Chevron down arrow */
+.arr-down{
+  padding-left: 85px;
+  padding-top: 35px;
+}
+.footeroptionsection p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Footer menu with links */
+.footer-menu{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 140px;
+  padding-right: 230px;
+  margin: 0;
+}
+/* App download images */
+.downloadapp{
+  width: 100%;
+  display: block;
+}
+.downloadapp img{
+  width: 150px;
+}
+/* Styling for footer menu items */
+.footer-menu ul{
+  padding: 0;
+  list-style: none;
+}
+.footer-menu h3{
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Links inside the footer menu */
+.footer-menu a{
+  color: rgb(128,121,121);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+/* Social media links styling */
+.socialmedialinks{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.horizontalLine{
+  background-color: black;
+}
+/* Custom line separating the footer */
+.custom-line {
+  border: none;          /* Remove default border */
+  border-top: .8px solid #a7a1a1; /* Set line style */
+  width: 80%;            /* Set line width */
+  margin: 20px auto;     /* Center the line */
+}
+/* Footer text styling */
+.final-para{
+  padding-left: 140px;
+  padding-right: 140px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(128,121,121);
+  font-size: 12px;
+  font-weight: 200;
+}
+  
+
+
+
+  

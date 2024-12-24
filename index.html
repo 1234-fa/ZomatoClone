@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css"><!-- Link to external CSS file for styles -->
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <header> <!-- First Section-->
+        <nav class="nav"><!-- Navigation bar -->
+            <div class="container container-nav">
+            <div class="logocontainer"><!--class for nav bar left side contents-->
+                <img src="mobinhand.png" alt="logo"> <!--logo image oh top left side-->
+                <p class="gtapp">Get the App</p> 
+            </div> 
+            <div class="navb"> <!--Navbar right side contents-->
+                <ul>
+                    <li><a href="">Investor Relationship</a></li>
+                    <li><a href="">Add Restaurant</a></li>
+                    <li><a href="">login</a></li>
+                    <li><a href="">Signup</a></li>
+                </ul>  
+            </div> 
+            </div>                    
+        </nav>
+        <div class="background-paragraph"> <!-- background for the whole content in the first section-->
+            <img src="logo.png" alt="Zomato Logo" class="logo"><!--zomato logo-->
+            <p class="first-p">Discover the best food & drinks in Kochi</p> <!--Text under the Logo-->
+            <div class="search-container"><!--container for search location and search items-->
+                <div class="detectlocation"><!--for Loctaion-->
+                    <i class="fa-solid fa-location-dot"></i><!--icon of location-->
+                    <input type="text" placeholder="Mumbai"/>
+                    <i class="fa-solid fa-caret-down"></i><!--icon for up arrow-->
+                </div>
+                <div class="line">   |   </div><!-- Separator line between location and search bar -->
+                <div class="search-item"><!--for items-->
+                    <i class="fa-solid fa-magnifying-glass"></i> <!--Icon for search-->
+                    <input type="text" placeholder="Search for restaurant,cuisine or a dish"/>
+                </div>
+            </div>
+        </div>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="sec-1"><!--Section 2-->
+        <div class="box"><!--these for two boxes contains order and dining-->
+            <div class="white"><p class="text-container">Order Online</p>
+            <p class="white1">Stay home and order to your doorstep</p></div>
+            <!--first image link-->
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*" alt="first image" class="image">
+        </div>
+        <div class="box">
+            <div class="white"><p class="text-container">Dining</p>
+            <p class="white1">View the city's favourite dining venues</p></div>
+            <!--second image link-->
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*" alt="second image" class="image">
+        </div>    
+    </section>  
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h1 class="collect">Collections</h1> <!--Section 3-->
+    <div class="collection-container"><!--contents on section 3-->
+        <div class="col-cont"><!--first contents on the section 3-->
+        <p class="collect-p">Explore curated lists of top restaurants,cafes,pubs,and bars in kochi,based on trends</p>
+        <p class="collect-p1">All coections in Kochi</p>
+        <i class="fa-solid fa-caret-right caret-right1"></i>
+    </div>
+    <section class="collect-box"><!--class for the images on section 3-->
+        <div class="box-content"><!--first imgae with contents-->
+            <div class="whitez"><p class="text-containerz">8 Places ofr art lovers</p>
+                <div class="white1z"><!--section for the texts in the images-->
+                    <p class="white1z">7 places</p>
+            <i class="fa-solid fa-caret-right caret-right "></i></div>
+        </div>
+            <img src="img1.png" alt="second image" class="images"><!--first image on section 3-->
+        </div>
+        <div class="box-content"><!--second imgae with contents-->
+            <div class="whitez"><p class="text-containerz">Great Cafes</p>
+                <div class="white1z">    <!--section for the texts in the images-->     
+            <p class="white1z">11 Places</p>
+            <i class="fa-solid fa-caret-right caret-right"></i></div> 
+        </div>
+            <img src="img2.jpeg" alt="second image" class="images"><!--second image on section 3-->
+        </div>
+        <div class="box-content"><!--third imgae with contents-->
+            <div class="whitez"><p class="text-containerz">6 Places for authentic kuz...</p>
+                <div class="white1z"><!--section for the texts in the images-->
+            <p class="white1z">5 places</p>
+            <i class="fa-solid fa-caret-right caret-right"></i></div>
+        </div>
+            <img src="img3.jpeg" alt="second image" class="images"><!--third image on section 3-->
+        </div>
+        <div class="box-content"><!--fourth imgae with contents-->
+            <div class="whitez"><p class="text-containerz">5 Must-Visit legentry pl..</p>
+                <div class="white1z"><!--section for the texts in the images-->
+            <p class="white1z">5 places</p>
+            <i class="fa-solid fa-caret-right caret-right"></i></div>
+        </div>
+            <img src="img4.jpeg" alt="second image" class="images"><!--fourth image on section 3-->
+        </div>  
+    </div>
+    </section> 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Section 4-->
+    <!--this section contains the locations-->
+<h1 class="loc-para">Popular localities in and around <strong>Kochi</strong></h1> 
+    <section class="location-box"><!--class for the contents on the section-->
+        <div class="matrix-container"><!-- grid class for align items as matrix form-->
+            <div class="matrix-item"><!--contents on the matrix-->
+                <h3>Kakkanad</h3>
+                <p>540 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>Edappally</h3>
+                <p>376 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>Fort Kochi</h3>
+                <p>141 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>Panampilly Nagar</h3>
+                <p>112 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>MG Road</h3>
+                <p>102 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>Kacheripady</h3>
+                <p>127 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>Palarivattom</h3>
+                <p>171 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item">
+                <h3>Vyttila</h3>
+                <p>140 places</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="matrix-item1">
+                <h3>see more</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="gtz-container"><!--Section 5-->
+        <!--Phone image-->
+        <img src="https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png" class="phimg">
+        <div class="gtz-content">
+        <p class="gtz-p1">Get the Zomato app</p>
+        <p class="gtz-p2">We will sent you a link, open it on your phone to download the app</p>
+        <form action=""><!--form in the section 5-->
+            <div class="zomato-radiobtn">
+                <input type="radio" name="select-radio" id="email"/>
+                <label for="email">Email</label>
+                <input type="radio" name="select-radio" id="phone"/>
+                <label for="phone">Phone</label>
+            </div>
+            <div class="zomato-input"><!--these content for enter email or phone number and share button-->
+                <div class="input-container">
+                    <input type="text" placeholder="Email"/>
+                </div>
+                <button class="zomato-app-btn">Share App Link</button>
+            </div>
+        </form>
+        <p>Download app from</p>
+        <div class="download-app"><!--images for the applictaion download options-->
+            <a href="#">
+                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png">
+            </a>
+            <a href="#">
+                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png">
+            </a>
+        </div>
+    </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="exp-container"><!--Section 6-->
+        <!--this section contains the more info about the zomato-->
+        <p class="exp-para">Explore options near me</p>
+        <div class="four-container">
+            <p>Popular Cuisine Near Me</p>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+        <div class="four-container">
+            <p>Popular Restaurant Types Near me</p>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+        <div class="four-container">
+            <P>Top Restaurant Chains</P>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+        <div class="four-container">
+            <p>Cities we Deliver To</p>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+   <!--footer-->
+<section class="final-container"><!--Section 7-->
+        <div class="final-block">
+            <div class="header-block">
+                <!--zomato logo on the footer section-->
+        <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around%7C198:42&crop=198:42;*,*" alt="logos" class="black-logo">
+        </div>
+        <div class="footerlanguage-country"><!--checkboxes on the right side of the footer-->
+            <div class="footeroptionsection">
+                <div class="flagimage">
+                    <img src="https://cdn.pixabay.com/photo/2012/04/10/23/03/india-26828_640.png" alt="">
+                </div>
+                <p>India</p>
+                <i class="fa-solid fa-chevron-down arr-down"></i>
+            </div>
+
+            <div class="footeroptionsection">
+                <div class="iconlobeimage">
+                    <i class="fa-regular fa-globe"></i>
+                </div>
+                <p>English</p>
+                <i class="fa-solid fa-chevron-down arr-down"></i>
+            </div>
+        </div>
+        </div>
+        <div class="footer-menu"><!-- Footer menu with links categorized into about, zomaverse,learn more etc. -->
+            <div class="footer-menu-items">
+                <h3>ABOUT ZOMATO</h3>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Report Fraud</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu-items">
+                <h3>ZOMAVERSE</h3>
+                <ul>
+                    <li><a href="#">Zomato</a></li>
+                    <li><a href="#">Blinkit</a></li>
+                    <li><a href="#">District</a></li>
+                    <li><a href="#">Feeding India</a></li>
+                    <li><a href="#">Hyperpure</a></li>
+                    <li><a href="#">Zomato Live</a></li>
+                    <li><a href="#">Zomaland</a></li>
+                    <li><a href="#">Weather Union</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu-items">
+                <h3>FOR RESTAURANTS</h3>
+                <ul>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">Apps For You</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu-items">
+                <h3>LEARN MORE</h3>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu-items"><!--social media links-->
+                <h3>SOCIAL LINKS</h3>
+                <div class="socialmedialinks">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <a href="#" class="downloadapp"><!--applictaion download options images-->
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png">
+                </a>
+                <a href="#" class="downloadapp">
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png">
+                </a>
+            </div>
+        </div>
+        <hr class="custom-line"><!--footer line-->
+        <!--footer text-->
+        <p class="final-para">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+    </section>
+</body>
+</html>
+
+
